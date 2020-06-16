@@ -9,7 +9,7 @@ app = Flask(__name__)
 def idm_api():
     if request.method == 'POST':
         data = request.json
-        tcp_handler(data)
+        r = tcp_handler(data)
         return Response("200")
 
 
